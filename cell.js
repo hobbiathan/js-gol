@@ -18,13 +18,15 @@ function Cell(x, y, w) {
 Cell.prototype.show = function() {
     stroke(0);
 
+    
     if (this.alive) {
-        fill(255);
+        fill(random(255), random(255), random(255));
     } else {
-        fill(0);
+        fill(255);
     }
     // Make square
     rect(this.x, this.y, this.w, this.w)
 
 
 }
+
