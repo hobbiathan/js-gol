@@ -53,7 +53,7 @@ function draw() {
             grid[i][j].show();
         }
     }
-    sleep(180);
+    sleep(2000);
 }
 
 function regenerate() {
