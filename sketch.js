@@ -21,12 +21,12 @@ var grid;
 var cols;
 var rows;
 
-// 20 pixels
+// cell size in pixels
 var w = 20;
 
 
 function setup() {
-    var canvas = createCanvas(501, 501);
+    var canvas = createCanvas(120, 260);
     canvas.parent('sketch-holder'); 
     // Setup canvas size to render
      // Calculate # of columns and rows, make sure it's an integer
@@ -53,7 +53,7 @@ function draw() {
             grid[i][j].show();
         }
     }
-    sleep(200);
+    sleep(180);
 }
 
 function regenerate() {
