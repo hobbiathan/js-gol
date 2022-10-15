@@ -16,7 +16,7 @@ function Cell(x, y, w) {
 }
 
 Cell.prototype.show = function() {
-    stroke(0);
+    stroke(5);
 
     
     if (this.alive) {
