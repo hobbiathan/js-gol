@@ -26,12 +26,10 @@ var w = 20;
 
 
 function setup() {
-
-    
+    var canvas = createCanvas(501, 501);
+    canvas.parent('sketch-holder'); 
     // Setup canvas size to render
-    createCanvas(501, 501);
-
-    // Calculate # of columns and rows, make sure it's an integer
+     // Calculate # of columns and rows, make sure it's an integer
     cols = floor(width / w);
     rows = floor(height / w);
 
