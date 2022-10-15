@@ -7,12 +7,6 @@ function Cell(x, y, w) {
     // Cell width
     this.w = w;
 
-    // Random cells will be dead and alive on load
-    if (random(1) < 0.31417) {
-        this.alive = true;
-    } else {
-        this.alive = false;
-    }
 }
 
 Cell.prototype.show = function() {
@@ -20,7 +14,7 @@ Cell.prototype.show = function() {
 
     
     if (this.alive) {
-        fill(random(255), random(255), random(255));
+        fill(0);
     } else {
         fill(255);
     }
